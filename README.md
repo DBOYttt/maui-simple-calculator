@@ -6,8 +6,8 @@ This is a simple calculator application built with the .NET MAUI framework. It f
 - Basic arithmetic operations: addition, subtraction, multiplication, and division.
 - User interface with large, legible buttons.
 - New Feature! Button click animations for enhanced user interactivity.
-- 
-##Usage
+  
+## Usage
 1. Launch the application.
 1. Input your first number using the numeric buttons.
 1. Choose an arithmetic operation.
