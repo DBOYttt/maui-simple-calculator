@@ -22,4 +22,5 @@ This is a simple calculator application built with the .NET MAUI framework. It f
 ## Contribution
 - We welcome any feedback and suggestions on this project. If you have improvement ideas or encounter any issues, please open a new issue or submit a pull request.
 ## Demo:
-![image](https://github.com/DBOYttt/maui-simple-calculator/assets/65898012/be7ca426-3c1a-4ecb-ba11-ac48c2ed1a75)
+![image](https://github.com/DBOYttt/maui-simple-calculator/assets/65898012/dc4ffa62-d16e-4060-be63-ed970a60bf32)
+
