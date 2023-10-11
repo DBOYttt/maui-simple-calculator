@@ -1,4 +1,7 @@
-﻿namespace calculator2
+
+using Microsoft.Maui.Graphics;
+
+namespace calculator2
 {
     public partial class MainPage : ContentPage
     {
@@ -15,9 +18,23 @@
             InitializeComponent();
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
+        private Color originalBtnColor;
+        private Color originalTextColor;
+
+        private async void OnCounterClicked(object sender, EventArgs e)
         {
             var btn = sender as Button;
+            if (btn != null)
+            {
+                originalBtnColor = btn.BackgroundColor;
+                originalTextColor = btn.TextColor;
+
+                btn.Background = Colors.Black;
+                btn.TextColor = Colors.White;
+
+                await btn.ScaleTo(0.9, 50);
+                await btn.ScaleTo(1, 50);
+            }
             var thisInput = btn.Text;
 
             if (numbers.Contains(thisInput))
@@ -86,5 +103,16 @@
             }
             return res;
         }
+
+        private void OnButtonReleased(object sender, EventArgs e)
+        {
+            var btn = sender as Button;
+            if (btn != null)
+            {
+                btn.BackgroundColor = originalBtnColor;
+                btn.TextColor = originalTextColor;
+            }
+        }
+
     }
 }
