@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="calculator2.MainPage">
+
+    <Grid ColumnDefinitions="*,*,*,*"
+          RowDefinitions="*,*,*,*,*"
+          >
+        <Entry x:Name="result"
+               Grid.Row="0"
+               Grid.ColumnSpan="4"
+               TextColor="Black"
+               FontSize="25"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               HorizontalTextAlignment="Center"
+               />
+        <!-- ROW 1-->
+        
+        <Button Grid.Row="1"
+                Grid.Column="0"
+                Text="7"
+                CornerRadius="20"
+                Clicked="OnCounterClicked"
+                />
+        <Button Grid.Row="1"
+                Grid.Column="1"
+                Text="8"
+                CornerRadius="20"
+                Clicked="OnCounterClicked"
+                />
+        <Button Grid.Row="1"
+                Grid.Column="2"
+                Text="9"
+                CornerRadius="20"
+                Clicked="OnCounterClicked"
+                />
+        <Button Grid.Row="1"
+                Grid.Column="3"
+                Text="x"
+                CornerRadius="20"
+                Clicked="OnCounterClicked"
+                />
+        <!-- ROW 2-->
+        <Button Grid.Row="2"
+                Grid.Column="3"
+                Text="/"
+                CornerRadius="20"
+                Clicked="OnCounterClicked"
+                />
+        <Button Grid.Row="2"
+                Grid.Column="2"
+                Text="6"
+                CornerRadius="20"
+                Clicked="OnCounterClicked"
+                />
+        <Button Grid.Row="2"
+                Grid.Column="1"
+                Text="5"
+                CornerRadius="20"
+                Clicked="OnCounterClicked"
+                />
+        <Button Grid.Row="2"
+                Grid.Column="0"
+                Text="4"
+                CornerRadius="20"
+                Clicked="OnCounterClicked"
+                />
+        <!-- ROW 3-->
+        <Button Grid.Row="3"
+                Grid.Column="3"
+                Text="+"
+                CornerRadius="20"
+                Clicked="OnCounterClicked"
+                />
+        <Button Grid.Row="3"
+                Grid.Column="2"
+                Text="3"
+                CornerRadius="20"
+                Clicked="OnCounterClicked"
+                />
+        <Button Grid.Row="3"
+                Grid.Column="1"
+                Text="2"
+                CornerRadius="20"
+                Clicked="OnCounterClicked"
+                />
+        <Button Grid.Row="3"
+                Grid.Column="0"
+                Text="1"
+                CornerRadius="20"
+                Clicked="OnCounterClicked"
+                />
+        <!-- ROW 4-->
+        <Button Grid.Row="4"
+                Grid.Column="0"
+                Text="•"
+                CornerRadius="20"
+                Clicked="OnCounterClicked"
+                />
+        <Button Grid.Row="4"
+                Grid.Column="1"
+                Text="0"
+                CornerRadius="20"
+                Clicked="OnCounterClicked"
+                />
+        <Button Grid.Row="4"
+                Grid.Column="2"
+                Text="="
+                CornerRadius="20"
+                Clicked="OnCounterClicked"
+                />
+        <Button Grid.Row="4"
+                Grid.Column="3"
+                Text="-"
+                CornerRadius="20"
+                Clicked="OnCounterClicked"
+                />
+    </Grid>
+
+</ContentPage>
